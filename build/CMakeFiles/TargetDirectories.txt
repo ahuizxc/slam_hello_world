@@ -1,0 +1,3 @@
+/home/intel/rgb2cld/build/CMakeFiles/edit_cache.dir
+/home/intel/rgb2cld/build/CMakeFiles/rebuild_cache.dir
+/home/intel/rgb2cld/build/CMakeFiles/generate_pointcloud.dir
