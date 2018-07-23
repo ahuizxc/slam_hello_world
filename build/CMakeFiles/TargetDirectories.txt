@@ -1,3 +1,5 @@
 /home/intel/rgb2cld/build/CMakeFiles/edit_cache.dir
 /home/intel/rgb2cld/build/CMakeFiles/rebuild_cache.dir
-/home/intel/rgb2cld/build/CMakeFiles/generate_pointcloud.dir
+/home/intel/rgb2cld/build/src/CMakeFiles/rebuild_cache.dir
+/home/intel/rgb2cld/build/src/CMakeFiles/edit_cache.dir
+/home/intel/rgb2cld/build/src/CMakeFiles/slambase.dir

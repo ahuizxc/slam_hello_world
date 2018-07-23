@@ -111,32 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named generate_pointcloud
+# Target rules for targets named slambase
 
 # Build rule for target.
-generate_pointcloud: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 generate_pointcloud
-.PHONY : generate_pointcloud
+slambase: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 slambase
+.PHONY : slambase
 
 # fast build rule for target.
-generate_pointcloud/fast:
-	$(MAKE) -f CMakeFiles/generate_pointcloud.dir/build.make CMakeFiles/generate_pointcloud.dir/build
-.PHONY : generate_pointcloud/fast
-
-# target to build an object file
-src/rgb2cld_1.o:
-	$(MAKE) -f CMakeFiles/generate_pointcloud.dir/build.make CMakeFiles/generate_pointcloud.dir/src/rgb2cld_1.o
-.PHONY : src/rgb2cld_1.o
-
-# target to preprocess a source file
-src/rgb2cld_1.i:
-	$(MAKE) -f CMakeFiles/generate_pointcloud.dir/build.make CMakeFiles/generate_pointcloud.dir/src/rgb2cld_1.i
-.PHONY : src/rgb2cld_1.i
-
-# target to generate assembly for a file
-src/rgb2cld_1.s:
-	$(MAKE) -f CMakeFiles/generate_pointcloud.dir/build.make CMakeFiles/generate_pointcloud.dir/src/rgb2cld_1.s
-.PHONY : src/rgb2cld_1.s
+slambase/fast:
+	$(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/build
+.PHONY : slambase/fast
 
 # Help Target
 help:
@@ -146,10 +131,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... generate_pointcloud"
-	@echo "... src/rgb2cld_1.o"
-	@echo "... src/rgb2cld_1.i"
-	@echo "... src/rgb2cld_1.s"
+	@echo "... slambase"
 .PHONY : help
 
 

@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.5.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.5.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.5.1/CMakeSystem.cmake"
+  "../src/CMakeLists.txt"
   "/usr/lib/cmake/vtk-6.2/Modules/vtkChartsCore.cmake"
   "/usr/lib/cmake/vtk-6.2/Modules/vtkCommonColor.cmake"
   "/usr/lib/cmake/vtk-6.2/Modules/vtkCommonComputationalGeometry.cmake"
@@ -243,9 +244,10 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/generate_pointcloud.dir/DependInfo.cmake"
+  "src/CMakeFiles/slambase.dir/DependInfo.cmake"
   )
