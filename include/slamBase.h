@@ -16,7 +16,9 @@ using namespace std;
 // OpenCV
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
-
+#include <opencv2/features2d/features2d.hpp>
+// #include <opencv2/nonfree/nonfree.hpp> // use this if you want to use SIFT or SURF
+#include <opencv2/calib3d/calib3d.hpp>
 //PCL
 #include <pcl/io/pcd_io.h>
 #include <pcl/point_types.h>
@@ -31,6 +33,24 @@ struct CAMERA_INTRINSIC_PARAMETERS
     double cx, cy, fx, fy, scale;
 };
 
+struct FRAME
+{
+    cv::Mat rgb, depth;
+    cv::Mat desp;
+    vector<cv::KeyPoint> kp;
+};
+
+struct RESULT_OF_PNP
+{
+    cv::Mat rvec, tvec;
+    cv::Mat inliers;
+
+};
+
+void computeKeyPointsAndDesp( FRAME& frame);
+
+
+RESULT_OF_PNP estimateMotion( FRAME& frame1, FRAME& frame2, CAMERA_INTRINSIC_PARAMETERS& camera );
 // 函数接口
 // image2PonitCloud 将rgb图转换为点云
 PointCloud::Ptr image2PointCloud( cv::Mat& rgb, cv::Mat& depth, CAMERA_INTRINSIC_PARAMETERS& camera );

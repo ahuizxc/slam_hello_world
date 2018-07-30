@@ -220,6 +220,7 @@ src/CMakeFiles/slambase.dir/slamBase.cpp.o: /usr/include/x86_64-linux-gnu/bits/w
 src/CMakeFiles/slambase.dir/slamBase.cpp.o: /usr/include/x86_64-linux-gnu/sys/mman.h
 src/CMakeFiles/slambase.dir/slamBase.cpp.o: /usr/local/include/opencv/cxcore.h
 src/CMakeFiles/slambase.dir/slamBase.cpp.o: /usr/local/include/opencv2/calib3d.hpp
+src/CMakeFiles/slambase.dir/slamBase.cpp.o: /usr/local/include/opencv2/calib3d/calib3d.hpp
 src/CMakeFiles/slambase.dir/slamBase.cpp.o: /usr/local/include/opencv2/calib3d/calib3d_c.h
 src/CMakeFiles/slambase.dir/slamBase.cpp.o: /usr/local/include/opencv2/core.hpp
 src/CMakeFiles/slambase.dir/slamBase.cpp.o: /usr/local/include/opencv2/core/affine.hpp
@@ -253,6 +254,7 @@ src/CMakeFiles/slambase.dir/slamBase.cpp.o: /usr/local/include/opencv2/core/type
 src/CMakeFiles/slambase.dir/slamBase.cpp.o: /usr/local/include/opencv2/core/utility.hpp
 src/CMakeFiles/slambase.dir/slamBase.cpp.o: /usr/local/include/opencv2/core/version.hpp
 src/CMakeFiles/slambase.dir/slamBase.cpp.o: /usr/local/include/opencv2/features2d.hpp
+src/CMakeFiles/slambase.dir/slamBase.cpp.o: /usr/local/include/opencv2/features2d/features2d.hpp
 src/CMakeFiles/slambase.dir/slamBase.cpp.o: /usr/local/include/opencv2/flann.hpp
 src/CMakeFiles/slambase.dir/slamBase.cpp.o: /usr/local/include/opencv2/flann/all_indices.h
 src/CMakeFiles/slambase.dir/slamBase.cpp.o: /usr/local/include/opencv2/flann/allocator.h

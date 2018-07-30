@@ -15,6 +15,10 @@ opencv2/core/core.hpp
 -
 opencv2/highgui/highgui.hpp
 -
+opencv2/features2d/features2d.hpp
+-
+opencv2/calib3d/calib3d.hpp
+-
 pcl/io/pcd_io.h
 -
 pcl/point_types.h
@@ -25,10 +29,6 @@ iostream
 -
 slamBase.h
 /home/intel/rgb2cld/src/slamBase.h
-opencv2/features2d/features2d.hpp
--
-opencv2/calib3d/calib3d.hpp
--
 
 /usr/include/eigen3/Eigen/Cholesky
 Core
