@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+src/CMakeFiles/detectFeatures.dir/rule:
+	cd /home/intel/rgb2cld/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/detectFeatures.dir/rule
+.PHONY : src/CMakeFiles/detectFeatures.dir/rule
+
+# Convenience name for target.
+detectFeatures: src/CMakeFiles/detectFeatures.dir/rule
+
+.PHONY : detectFeatures
+
+# fast build rule for target.
+detectFeatures/fast:
+	cd /home/intel/rgb2cld/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/build
+.PHONY : detectFeatures/fast
+
+# Convenience name for target.
 src/CMakeFiles/slambase.dir/rule:
 	cd /home/intel/rgb2cld/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/slambase.dir/rule
 .PHONY : src/CMakeFiles/slambase.dir/rule
@@ -124,6 +139,33 @@ slambase: src/CMakeFiles/slambase.dir/rule
 slambase/fast:
 	cd /home/intel/rgb2cld/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/build
 .PHONY : slambase/fast
+
+detectFeatures.o: detectFeatures.cpp.o
+
+.PHONY : detectFeatures.o
+
+# target to build an object file
+detectFeatures.cpp.o:
+	cd /home/intel/rgb2cld/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.o
+.PHONY : detectFeatures.cpp.o
+
+detectFeatures.i: detectFeatures.cpp.i
+
+.PHONY : detectFeatures.i
+
+# target to preprocess a source file
+detectFeatures.cpp.i:
+	cd /home/intel/rgb2cld/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.i
+.PHONY : detectFeatures.cpp.i
+
+detectFeatures.s: detectFeatures.cpp.s
+
+.PHONY : detectFeatures.s
+
+# target to generate assembly for a file
+detectFeatures.cpp.s:
+	cd /home/intel/rgb2cld/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.s
+.PHONY : detectFeatures.cpp.s
 
 slamBase.o: slamBase.cpp.o
 
@@ -160,7 +202,11 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... detectFeatures"
 	@echo "... slambase"
+	@echo "... detectFeatures.o"
+	@echo "... detectFeatures.i"
+	@echo "... detectFeatures.s"
 	@echo "... slamBase.o"
 	@echo "... slamBase.i"
 	@echo "... slamBase.s"

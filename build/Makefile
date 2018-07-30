@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named detectFeatures
+
+# Build rule for target.
+detectFeatures: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 detectFeatures
+.PHONY : detectFeatures
+
+# fast build rule for target.
+detectFeatures/fast:
+	$(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/build
+.PHONY : detectFeatures/fast
+
+#=============================================================================
 # Target rules for targets named slambase
 
 # Build rule for target.
@@ -131,6 +144,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... detectFeatures"
 	@echo "... slambase"
 .PHONY : help
 
