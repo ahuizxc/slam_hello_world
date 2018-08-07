@@ -4,16 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/intel/rgb2cld/src/detectFeatures.cpp" "/home/intel/rgb2cld/build/src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.o"
+  "/home/hui/slam_hello_world/src/detectFeatures.cpp" "/home/hui/slam_hello_world/build/src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
+  "DISABLE_LIBUSB_1_0"
   "DISABLE_PCAP"
   "DISABLE_PNG"
-  "EIGEN_USE_NEW_STDVECTOR"
-  "EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"
   "QT_CORE_LIB"
   "QT_GUI_LIB"
   "QT_NO_DEBUG"
@@ -34,19 +33,19 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
   "/usr/include/vtk-6.2"
-  "/usr/include/x86_64-linux-gnu"
   "/usr/include/freetype2"
   "/usr/include/x86_64-linux-gnu/freetype2"
+  "/usr/include/x86_64-linux-gnu"
   "/usr/include/jsoncpp"
-  "/usr/include/hdf5/openmpi"
   "/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent"
   "/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent/include"
   "/usr/lib/openmpi/include"
   "/usr/lib/openmpi/include/openmpi"
-  "/usr/include/python2.7"
   "/usr/include/libxml2"
+  "/usr/include/python2.7"
+  "/usr/include/hdf5/openmpi"
   "/usr/include/tcl"
-  "/usr/include/pcl-1.7"
+  "/usr/local/include/pcl-1.8"
   "/usr/include/eigen3"
   "/usr/include/ni"
   "/usr/include/openni2"
@@ -61,7 +60,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/intel/rgb2cld/build/src/CMakeFiles/slambase.dir/DependInfo.cmake"
+  "/home/hui/slam_hello_world/build/src/CMakeFiles/slambase.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

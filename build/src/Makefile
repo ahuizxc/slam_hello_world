@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/intel/rgb2cld
+CMAKE_SOURCE_DIR = /home/hui/slam_hello_world
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/intel/rgb2cld/build
+CMAKE_BINARY_DIR = /home/hui/slam_hello_world/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/intel/rgb2cld/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/intel/rgb2cld/build/CMakeFiles /home/intel/rgb2cld/build/src/CMakeFiles/progress.marks
-	cd /home/intel/rgb2cld/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/intel/rgb2cld/build/CMakeFiles 0
+	cd /home/hui/slam_hello_world/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/hui/slam_hello_world/build/CMakeFiles /home/hui/slam_hello_world/build/src/CMakeFiles/progress.marks
+	cd /home/hui/slam_hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hui/slam_hello_world/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/intel/rgb2cld/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/hui/slam_hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/intel/rgb2cld/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/hui/slam_hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/intel/rgb2cld/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/hui/slam_hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/intel/rgb2cld/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hui/slam_hello_world/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/detectFeatures.dir/rule:
-	cd /home/intel/rgb2cld/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/detectFeatures.dir/rule
+	cd /home/hui/slam_hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/detectFeatures.dir/rule
 .PHONY : src/CMakeFiles/detectFeatures.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ detectFeatures: src/CMakeFiles/detectFeatures.dir/rule
 
 # fast build rule for target.
 detectFeatures/fast:
-	cd /home/intel/rgb2cld/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/build
+	cd /home/hui/slam_hello_world/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/build
 .PHONY : detectFeatures/fast
 
 # Convenience name for target.
 src/CMakeFiles/slambase.dir/rule:
-	cd /home/intel/rgb2cld/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/slambase.dir/rule
+	cd /home/hui/slam_hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/slambase.dir/rule
 .PHONY : src/CMakeFiles/slambase.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ slambase: src/CMakeFiles/slambase.dir/rule
 
 # fast build rule for target.
 slambase/fast:
-	cd /home/intel/rgb2cld/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/build
+	cd /home/hui/slam_hello_world/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/build
 .PHONY : slambase/fast
 
 detectFeatures.o: detectFeatures.cpp.o
@@ -146,7 +146,7 @@ detectFeatures.o: detectFeatures.cpp.o
 
 # target to build an object file
 detectFeatures.cpp.o:
-	cd /home/intel/rgb2cld/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.o
+	cd /home/hui/slam_hello_world/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.o
 .PHONY : detectFeatures.cpp.o
 
 detectFeatures.i: detectFeatures.cpp.i
@@ -155,7 +155,7 @@ detectFeatures.i: detectFeatures.cpp.i
 
 # target to preprocess a source file
 detectFeatures.cpp.i:
-	cd /home/intel/rgb2cld/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.i
+	cd /home/hui/slam_hello_world/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.i
 .PHONY : detectFeatures.cpp.i
 
 detectFeatures.s: detectFeatures.cpp.s
@@ -164,7 +164,7 @@ detectFeatures.s: detectFeatures.cpp.s
 
 # target to generate assembly for a file
 detectFeatures.cpp.s:
-	cd /home/intel/rgb2cld/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.s
+	cd /home/hui/slam_hello_world/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.s
 .PHONY : detectFeatures.cpp.s
 
 slamBase.o: slamBase.cpp.o
@@ -173,7 +173,7 @@ slamBase.o: slamBase.cpp.o
 
 # target to build an object file
 slamBase.cpp.o:
-	cd /home/intel/rgb2cld/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/slamBase.cpp.o
+	cd /home/hui/slam_hello_world/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/slamBase.cpp.o
 .PHONY : slamBase.cpp.o
 
 slamBase.i: slamBase.cpp.i
@@ -182,7 +182,7 @@ slamBase.i: slamBase.cpp.i
 
 # target to preprocess a source file
 slamBase.cpp.i:
-	cd /home/intel/rgb2cld/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/slamBase.cpp.i
+	cd /home/hui/slam_hello_world/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/slamBase.cpp.i
 .PHONY : slamBase.cpp.i
 
 slamBase.s: slamBase.cpp.s
@@ -191,7 +191,7 @@ slamBase.s: slamBase.cpp.s
 
 # target to generate assembly for a file
 slamBase.cpp.s:
-	cd /home/intel/rgb2cld/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/slamBase.cpp.s
+	cd /home/hui/slam_hello_world/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/slamBase.cpp.s
 .PHONY : slamBase.cpp.s
 
 # Help Target
@@ -221,6 +221,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/intel/rgb2cld/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hui/slam_hello_world/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

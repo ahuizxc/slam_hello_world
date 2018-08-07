@@ -1,4 +1,4 @@
-# Install script for directory: /home/intel/rgb2cld/src
+# Install script for directory: /home/hui/slam_hello_world/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

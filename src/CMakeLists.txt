@@ -1,4 +1,4 @@
-FIND_PACKAGE( PCL REQUIRED COMPONENTS common io )
+FIND_PACKAGE( PCL REQUIRED COMPONENTS common io visualization )
 
 # 增加opencv的依赖
 FIND_PACKAGE( OpenCV REQUIRED )
@@ -13,7 +13,7 @@ ADD_LIBRARY( slambase slamBase.cpp )
 TARGET_LINK_LIBRARIES( slambase
     ${OpenCV_LIBS} 
     ${PCL_LIBRARIES} )
-
+FIND_PACKAGE( PCL REQUIRED COMPONENTS common io visualization )
 ADD_EXECUTABLE( detectFeatures detectFeatures.cpp )
 TARGET_LINK_LIBRARIES( detectFeatures 
     slambase
